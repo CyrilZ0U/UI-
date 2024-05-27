@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+</head>
+
+<style>
+*{padding:0;margin:0}
+#background1{
+	background:url("bg登录.png");
+	width:1606px;
+	height:936px;
+	}
+#background1 img{float:right;}
+#box{width:700px;height:600px;background-color: rgba(0,0,0,0);
+	position:relative;
+	top:200px;
+	left:453px;
+	display:flex;
+	flex-direction:column;
+	justify-content: center; 
+	padding-left:100px; 
+	
+	
+	}
+#box .input1{ width:500px;height:30px; margin-bottom:20px;
+font-size:25px;
+border-style:solid;
+border-radius:10px;
+border-color:#006;}
+#login{ width:200px;margin-left:150px; margin-top:20px;height:50px;font-size:24px;}
+#zhuce{ width:200px;margin-left:150px; margin-top:20px;height:50px;font-size:24px;}
+#box h1{font-size:36px;}
+</style>
+<body>
+<div id = "background1"><img src="bg登录 图标.png" width="703" height="258" />
+  <div id = "box">
+    
+  <h1>账号</h1><input class = "input1" type = "text" id ="username">
+<h1>密码</h1><input class = "input1" tyoe = "text" id ="password">
+	
+<input name="1" type="button" value="登录" id = "login" onmouseover="changeColor1()"
+onmouseout = "changeColor2()" onclick="Login()"/>
+<input name="1" type="button" value="注册" id = "zhuce" onmouseover="changeColor3()"
+onmouseout = "changeColor4()" onclick="Zhuce()"/>
+
+
+
+</div>
+
+
+
+
+</div>
+<script>
+ function changeColor1() {  
+      var login = document.getElementById("login");  
+      login.style.backgroundColor = "blue";  
+    }  
+ function changeColor2() {  
+      var login = document.getElementById("login");  
+      login.style.backgroundColor = "white";  
+    } 
+ function changeColor3() {  
+      var zhuce = document.getElementById("zhuce");  
+      zhuce.style.backgroundColor = "blue";  
+    }  
+ function changeColor4() {  
+      var zhuce = document.getElementById("zhuce");  
+      zhuce.style.backgroundColor = "white";  
+    } 
+	
+	
+	
+	
+ function Login() {  
+        
+         
+            window.open("主页新闻 已经登录了.html"); 
+			//下一界面的地址 
+       
+}
+ function Zhuce(){
+	 		window.open("UI 星期二 注册界面.html");  
+	 		//注册界面的地址
+	 
+}
+    </script>
+</body>
+</html>

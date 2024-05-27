@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>主页新闻</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+	background-image:url("demo2.png");
+	background-size: cover;
+	}
+.tab-control{
+	position: absolute;
+    width: 700px;
+    height: 450px;
+    /* background: red; */
+    margin-top: 350px;
+	margin-left:30%;
+	
+}
+.tab-item{
+    width: 465px;
+    height: 60px;
+}
+.tab-item div{
+    width: 155px;
+    height: 60px;
+    /* background-color: blue; */
+    display: inline-block;
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.active{
+    background-color:#7B7B7B;
+	color:#FFFFFF；
+	
+}
+.active div{
+		color:#FFFFFF;
+	    
+	}
+.tab-content{
+    width: 100%;
+    height: 390px;
+    background-color: #7B7B7B;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.tab-content div{
+    width: 630px;
+    height: 340px;
+    background-color:#5B5B5B;
+    margin: 25px auto;
+    display: none;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 15px;
+}
+	#meun{  position:fixed;
+				left:50px;
+				top:40%;
+				width:180px;
+				height:270px;
+				z-index:99;/*这样菜单 会绝对 的 浮于最上方*/
+				
+				border-style: solid;
+				border-radius: 5px; 
+				border-width: 0px;
+				border-color: #000;  
+				}
+		#meun ul li{
+			list-style:none;
+			width:150px;
+			height:50px;
+			margin: 10px;
+			font-size:40px;
+			color:#D6D6D6;
+			text-align: center;
+			font-weight: bold;
+			background: linear-gradient(#484848 ,#808080);
+			text-shadow: 2px 2px 4px #000000;
+
+			/* 设置边框样式为实线 */  
+            border-style: solid;  
+              
+            /* 设置边框宽度为2像素 */  
+            border-width: 2px;  
+              
+            /* 设置边框颜色为红色 */  
+            border-color: #000;  
+              
+            /* 设置边框圆角为10像素 */  
+            border-radius: 5px;  }
+	.pk{
+		color: #E2E2E2;
+		position: relative;
+		top:280px;
+		left: 100px;
+		font-size:30px;
+		text-shadow: 2px 2px 4px #000000;
+	}
+	.icon img{
+		height:100px;
+		width:100px;
+		position: relative;
+		top:200px;
+		
+		
+	}
+</style>
+<script src="index.js"></script>
+
+<body>
+    <div class="tab-control">
+        <div class="tab-item">
+            <div class="active">公告</div><div>版本热点</div><div>说明</div>
+        </div>
+        <div class="tab-content">
+            <div style="display: block;">&nbsp; &nbsp; &nbsp;尊敬的叛客们：
+感谢您一直以来对《明日叛客》的支持与厚爱！我们很高兴地宣布，游戏已于近日推出了全新版本，为您带来了丰富的更新内容和优化体验。</div>
+            <div>新角色登场：本次更新加入了两位全新角色，他们拥有独特的技能和故事背景，为您的游戏之旅增添更多可能性。
+界面及UI升级：我们对游戏的界面和UI进行了全面升级，操作更加便捷，视觉效果更加精美。
+任务系统改进：新版本的任务系统将更加丰富多样，包括剧情任务、挑战任务和日常任务等，满足不同玩家的需求。
+全新剧情线：我们为您带来了全新的剧情线，探索更多未知的领域和角色，让您深入了解游戏世界的背景和故事。
+剧情结局：根据您的选择和行为，新版本将有多个剧情结局，让您体验不同的发展和结局带来的惊喜和挑战。</div>
+            <div>在进行版本更新时，请确保您的游戏客户端已更新至最新版本，以免出现无法登陆游戏的情况。
+在新版本中，我们修复了部分已知的BUG，提升了游戏的稳定性。
+对于新加入的副本和高难度挑战，我们建议您与其他玩家组队进行挑战，以提高成功率。
+本次更新还对游戏内的部分平衡性进行了调整，具体请以游戏内实际效果为准。
+再次感谢各位玩家的支持与厚爱！我们将继续努力，为您带来更多精彩的游戏内容。祝您在《明日叛客》的世界中玩得愉快！</div>
+        </div>
+    </div>
+     
+	<div id = "meun">
+                <ul>
+                <li onClick="M1()">个人</li>
+                <li onClick="M2()">新闻</li>
+                <li onClick="M3()">介绍</li>
+                <li onClick="M4()">关于</li>
+                </ul>
+                
+                </div>	 
+	<div class="pk">请去个人中心登录</div>
+	<div class="icon"><img src="icon 用户.png"></div>
+</body>
+</html>
